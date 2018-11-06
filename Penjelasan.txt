@@ -1,0 +1,3 @@
+Jakarta, 6 november 2018
+Hari ini adalah hari dimana saya sedang mememilih untuk menggunakan aplikasi git yang paling cocok dalam
+mengembangkan suatu project aplikasi di timku.
