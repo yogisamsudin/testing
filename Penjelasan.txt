@@ -7,3 +7,9 @@ ada 2 aplikasi git yang terkenal, yaitu:
 2. gitlab
 
 keduanya mempunya kelebihan dan kekurangan.
+
+github sangat mudah untuk digunakan dengan adanya github desktop
+kekurnagannya adalah github pada mode private harus bayar.
+
+gitlab tidak memiliki versi desktop harus by commandline untuk updatenya.
+kelebihannya adalah pada mode private gratis
