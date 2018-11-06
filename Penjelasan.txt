@@ -12,4 +12,6 @@ github sangat mudah untuk digunakan dengan adanya github desktop
 kekurnagannya adalah github pada mode private harus bayar.
 
 gitlab tidak memiliki versi desktop harus by commandline untuk updatenya.
-kelebihannya adalah pada mode private gratis
+kelebihannya adalah pada mode private gratis.
+
+sampai saat ini saya sedang mendalami gitlab
