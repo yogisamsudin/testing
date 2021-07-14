@@ -4196,7 +4196,7 @@ public class activities : System.Web.Services.WebService
         foreach (System.Data.DataRow row in c.executeTextQ(strSQL))
         {
             data.Add(
-                new s_fin_sales_opr(Convert.ToInt32(row["sales_id"]), Convert.ToInt32(row["grand_price"]), Convert.ToInt32(row["fee"]),
+                new s_fin_sales_opr(Convert.ToInt32(row["sales_id"]), Convert.ToInt64(row["grand_price"]), Convert.ToInt32(row["fee"]),
                 row["offer_no"].ToString(), row["str_offer_date"].ToString()
             ));
 
@@ -4215,7 +4215,7 @@ public class activities : System.Web.Services.WebService
         {
             data = new s_fin_sales(Convert.ToInt32(row["invoice_sales_id"]), row["str_invoice_date"].ToString(), row["invoice_no"].ToString(),
                 row["term_of_payment_id"].ToString(), row["term_of_payment"].ToString(), row["po_no"].ToString(), row["afpo_no"].ToString(),
-                Convert.ToInt32(row["customer_id"]), Convert.ToInt32(row["an_id"]), Convert.ToInt32(row["grand_price"]), Convert.ToInt32(row["fee"]),
+                Convert.ToInt32(row["customer_id"]), Convert.ToInt32(row["an_id"]), Convert.ToInt64(row["grand_price"]), Convert.ToInt32(row["fee"]),
                 row["customer_name"].ToString(), row["str_top_value"].ToString(), Convert.ToInt32(row["bill_id"]),
                 Convert.ToBoolean(row["paid_sts"]), row["paid_date"].ToString(), Convert.ToBoolean(row["send_sts"]), Convert.ToBoolean(row["invoice_sts"]),
                 Convert.ToInt32(row["surat_jalan_id"]), row["invoice_note"].ToString(), Convert.ToBoolean(row["pph_sts"]), Convert.ToBoolean(row["document_return_sts"]),
@@ -4317,11 +4317,11 @@ public class activities : System.Web.Services.WebService
                 row["sales_status_id"].ToString(), row["sales_status_marketing_id"].ToString(), row["sales_status"].ToString(),
                 row["sales_status_marketing"].ToString(), Convert.ToBoolean(row["tax_sts"]), Convert.ToInt32(row["customer_id"]),
                 Convert.ToInt32(row["ppn"]), Convert.ToInt32(row["pph21"]),
-                Convert.ToInt32(row["total_price"]), Convert.ToInt32(row["total_cost"]), Convert.ToInt32(row["total_price_pph21"]), Convert.ToInt32(row["total_ppn"]), Convert.ToInt32(row["total_pph21"]), Convert.ToInt32(row["total_discount"]), Convert.ToInt32(row["net"]), Convert.ToInt32(row["grand_price"]),
+                Convert.ToInt64(row["total_price"]), Convert.ToInt64(row["total_cost"]), Convert.ToInt32(row["total_price_pph21"]), Convert.ToInt32(row["total_ppn"]), Convert.ToInt32(row["total_pph21"]), Convert.ToInt32(row["total_discount"]), Convert.ToInt32(row["net"]), Convert.ToInt64(row["grand_price"]),
                 Convert.ToInt32(row["group_customer_id"]), Convert.ToBoolean(row["npwp_sts"]), row["invoice_no"].ToString(),
                 Convert.ToInt32(row["pcg_principal_price"]), row["update_status_date"].ToString(), row["reason_marketing_id"].ToString(),
                 row["reason_marketing"].ToString(),
-                Convert.ToInt32(row["total_principal"]), Convert.ToInt32(row["principal_net"]), Convert.ToInt32(row["additional_fee"]), row["additional_fee_note"].ToString(), row["sales_status_marketing_updatedate"].ToString()
+                Convert.ToInt64(row["total_principal"]), Convert.ToInt32(row["principal_net"]), Convert.ToInt32(row["additional_fee"]), row["additional_fee_note"].ToString(), row["sales_status_marketing_updatedate"].ToString()
             );
 
         }
@@ -4356,7 +4356,7 @@ public class activities : System.Web.Services.WebService
         foreach (System.Data.DataRow row in c.executeTextQ(strSQL))
         {
             data.Add(
-                new s_fin_service_opr(Convert.ToInt32(row["service_id"]), Convert.ToInt32(row["grand_price"]), Convert.ToInt32(row["fee"]),
+                new s_fin_service_opr(Convert.ToInt32(row["service_id"]), Convert.ToInt64(row["grand_price"]), Convert.ToInt32(row["fee"]),
                 row["offer_no"].ToString(), row["str_offer_date"].ToString()
             ));
 
@@ -4375,7 +4375,7 @@ public class activities : System.Web.Services.WebService
         {
             data = new s_fin_service(Convert.ToInt32(row["invoice_service_id"]), row["str_invoice_date"].ToString(), row["invoice_no"].ToString(),
                 row["term_of_payment_id"].ToString(), row["term_of_payment"].ToString(), row["po_no"].ToString(), row["afpo_no"].ToString(),
-                Convert.ToInt32(row["customer_id"]), Convert.ToInt32(row["an_id"]), Convert.ToInt32(row["grand_price"]), Convert.ToInt32(row["fee"]),
+                Convert.ToInt32(row["customer_id"]), Convert.ToInt32(row["an_id"]), Convert.ToInt64(row["grand_price"]), Convert.ToInt32(row["fee"]),
                 row["customer_name"].ToString(), row["str_top_value"].ToString(), Convert.ToInt32(row["bill_id"]),
                 Convert.ToBoolean(row["paid_sts"]), row["paid_date"].ToString(), Convert.ToBoolean(row["send_sts"]), Convert.ToBoolean(row["invoice_sts"]),
                 Convert.ToInt32(row["surat_jalan_id"]), row["invoice_note"].ToString(), Convert.ToBoolean(row["pph_sts"]), Convert.ToBoolean(row["document_return_sts"]),
@@ -4441,7 +4441,7 @@ public class activities : System.Web.Services.WebService
                 row["service_status_marketing_id"].ToString(), row["service_status"].ToString(), row["service_status_marketing"].ToString(), Convert.ToBoolean(row["tax_sts"]),
                 Convert.ToInt32(row["customer_id"]),
                 Convert.ToInt32(row["ppn"]), Convert.ToInt32(row["pph21"]), Convert.ToInt32(row["total_price"]), Convert.ToInt32(row["total_cost"]), Convert.ToInt32(row["total_price_pph21"]),
-                Convert.ToInt32(row["total_ppn"]), Convert.ToInt32(row["total_pph21"]), Convert.ToInt32(row["total_discount"]), Convert.ToInt32(row["net"]), Convert.ToInt32(row["grand_price"]),
+                Convert.ToInt32(row["total_ppn"]), Convert.ToInt32(row["total_pph21"]), Convert.ToInt32(row["total_discount"]), Convert.ToInt32(row["net"]), Convert.ToInt64(row["grand_price"]),
                 row["invoice_no"].ToString(), Convert.ToBoolean(row["npwp_sts"]), row["update_status_date"].ToString(), row["reason_marketing_id"].ToString(),
                 row["reason_marketing"].ToString(), Convert.ToInt32(row["additional_fee"]), row["additional_fee_note"].ToString(), row["service_status_marketing_updatedate"].ToString()
             );
